@@ -1,0 +1,51 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+  :global {
+    .ant-input-affix-wrapper {
+      border-radius: 20px !important;
+      box-shadow: 0 0 3px rgba(81, 203, 238, 1) !important;
+    }
+    .ant-tabs-nav-wrap {
+      background: #010121 !important;
+    }
+    .ant-btn-primary {
+      border-radius: 20px !important;
+    }
+  }
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  :global {
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}

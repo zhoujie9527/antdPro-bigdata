@@ -1,0 +1,63 @@
+@import '~antd/lib/style/themes/default.less';
+
+@keyframes myfirst2
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+}
+
+@-webkit-keyframes myfirst2 /*Safari and Chrome*/
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+}
+
+@keyframes myfirst
+{
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg)}
+}
+
+@-webkit-keyframes myfirst /*Safari and Chrome*/
+{
+  from {transform: rotate(360deg);}
+  to {transform: rotate(0deg)}
+}
+
+.mapbox {
+  width: 50%;
+  height: 100%;
+  background: #DDD;
+  .map {
+    position: relative;
+    height: rem;
+    z-index: 9;
+    margin-left: 20%;
+    margin-top: 8%;
+    .map1 {
+      width: 17rem;
+      z-index: 2;
+      position: absolute;
+      top: .45rem;
+      left: .4rem;
+      animation: myfirst2 15s infinite linear;
+    }
+    .map2 {
+      width: 15rem;
+      position: absolute;
+      top: 1.5rem;
+      left: 1rem;
+      z-index: 3;
+      opacity: 0.2;
+      animation: myfirst 10s infinite linear;
+    }
+    .map3 {
+      width: 13rem;
+      position: absolute;
+      top: 2.5rem;
+      left: 2.5rem;
+      z-index: 1;
+    }
+  }
+}
+
